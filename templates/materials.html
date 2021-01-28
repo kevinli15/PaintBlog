@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+    <!-- Page Header -->
+    {% block picture %}
+    <header
+      class="masthead"
+      style="background-image: url('{{ url_for('static', filename='images/materials/title.jpg') }}')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Materials Buying Guide</h1>
+              <span class="subheading">Cheap and easily attenable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% endblock %}
+
+    <!-- Post Content -->
+    {% block content %}
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="article-title">Materials Buying Guide</p>
+            <p class="article-subtitle">January 16th 2021</p><br>
+            <p class="article-content">
+              <p>Buying materials when you first start painting can certainly be overwhelming; a simple search 
+              on Amazon for miniatures paint sets can return products that price into triple figures. On top of that there’s tons of 
+              terminology out there which again and put off a fledgling painter, making the hobby seem more intimidating than it really is.</p>
+              <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/1.jpg') }}">Just the basics</a></div>
+
+              <p>However the beauty of any art is that it’s more about the painter rather than the paintbrush.  Your skill and techniques
+              are ultimately going to be the most important tool of all, so don't worry so much about the quality of materials you buy.
+              You can easily get the basic required materials for under $40, which will last you many hundreds of minis.</p>
+
+              <p><strong>Required Materials</strong>
+                <ul>
+                  <li>Brush Set</li>
+                  <li>Black primer</li>
+                  <li>Set of acrylic paints</li>
+                  <li>Protective finish spray</li>
+                </ul>
+
+              <p> Yup, that's it. I would say about 90% of the figures I've painted use only the above. The DiY Sundrop requires no washes at all
+              while the Rising Sun figures clan figures are washed with a premade wash. Let's go into a quick summary of each item:</p>
+              <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/materials/sund.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/materials/sund.jpg') }}"></a><a>No wash required!</a></div><br>
+              <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/risingsun/1.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/risingsun/1.jpg') }}"></a><a>Homemade wash</a></div><br>
+              <strong>Brush Set</strong>
+              <p>I use a lot of a technique called <strong>dry brushing</strong>, which is the process of applying a small amount of paint on a dry brush 
+                and quickly brushing it across the figure. Dry brushing is <strong>AMAZING</strong> for painting as when done in the right 
+                context it can act as a substitute for expensive washes. However dry brushing has also been known to damage brushes, which 
+                is why it's a common recommendation to buy cheaper brushes. Make up brushes are great because to dry brush you need more bristles 
+                which make up brushes have in supply. Avoid sets from dollar stores because their cheap materials. Aim for sets that have <a href="https://www.amazon.com/BOSOBO-Paintbrushes-Watercolor-Miniature-Detailing/dp/B07GH7WGC3/ref=sr_1_5?dchild=1&keywords=paint+brushes&qid=1610835694&sr=8-5">
+                thin and thick brushes </a> that are <a href="https://www.walmart.com/ip/Royal-and-Langnickel-10pc-Gold-Taklon-Round-and-Shader-Paint-Brushes/23081364">
+                priced between $5 to $10.</a> </p>
+                <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/brush.jpg') }}">Clean after every paint session!</a></div><br>
+              <strong>(Black) Primer</strong>
+              <p>Think of primer as a pre-paint paint. It’s the layer that goes on first to help your actual paint stick. The interesting thing about
+               primer is that whatever color your primer is, it can have a huge effect on your figure. For example, figures that have a white or 
+               lighter primer will be brighter overall, whereas black primer which create a darker tone. Some colors like yellow infamously won’t
+                appear correctly when applied to black primer because of how the thinner, lighter yellow reacts to a dark base color. I use black
+                 primer because <strong>dry brushing on black primer immediately accentuates all of a figure’s details</strong>. I’d go even as far to say that if 
+                 you prime in black and then dry brush just one layer on top, you could call it a day and your figures would still look great. I specifically
+                 use <a href="https://www.amazon.com/Prima-Marketing-Basics-Heavy-8-5-Ounce/dp/B00MX798QK/ref=sr_1_12?dchild=1&keywords=black+gesso&qid=1610837158&sr=8-12">
+                 heavy black gesso as my primer.</a> </p>
+                 <p><strong>UPDATE (Jan 21st, 2021)</strong> I've been exprimenting with just regular black arylic paint rather than black primer,
+                 see the results at the <a href="{{ url_for('diysundrop') }}">bottom of this article.</a></p>
+  
+              <strong>Acrylic Paint</strong>
+              <p> <a href="https://www.amazon.com/Apple-Barrel-Acrylic-PROMOABI-Assorted/dp/B00ATJSD8I/ref=sr_1_2?crid=51257T6QKOIO&dchild=1&keywords=apple+barrel+acrylic+paint&qid=1610837735&s=arts-crafts&sprefix=apple%2Carts-crafts%2C651&sr=1-2">
+              A set of basic Acrylic paints will get you pretty far.</a> Try to get matte and avoid gloss until you have more experience. 
+              Remember you can always mix to get certain colors. I recommend getting a larger size black and white paint as those are commonly 
+              used to darken/lighten your paint. Also try a brand of acrylic paints before committing to a full set. 
+              Also if you aren't buying the more expesnive miniatures specifc paints, generic arylic paint can sometimes have an
+              <a href="https://www.amazon.com/gp/product/B073ZZYXYP/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1">
+              issues such as not sticking to your figures (don’t buy these).</a></p>
+              <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/paint.jpg') }}">Under a $1 a bottle</a></div><br>
+              <strong>Protective Spray</strong>
+              <p>Sealer, varnish, protective finish…whatever you want to call it I think this is absolutely required.
+               <a href="https://smile.amazon.com/gp/product/B00023JE7K/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1">
+               Protecting your hard work </a> is pretty simple considering a scratched figure can be a headache to fix.</p>
+               <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/paintfall.jpg') }}">All paint chips, even officially painted ones!</a></div><br>
+              <strong>Optional Materials</strong>
+              <br>
+              <ul>
+                  <li>Wash</li>
+                  <li>Metal/Bronze/Gold Paint</li>
+                  <li>White/Grey Primer</li>
+                  <li>Paint Remover</li>
+                </ul>
+              <strong>Wash</strong>
+              <p>Washes are amazing and can instantly and easily take a mini up a few tiers when used. Despite their strengths however,
+              I would say to hold off on purchasing because they are expensive. A lot of the techniques I employ don't require it at all
+              and when I do need it, I usually just mix my own (though the quality is so-so). Certain methods use wash, others don't, buy
+              only if you know you need it.</p>
+              <strong>Metal/Bronze/Gold Paint</strong>
+              <p>Armor, weapons, guns, treasures, pipes, the list goes on and on. The shiny effect can't really be replicated with regular paints.
+              Grey and yellow paints can substitute for metal and gold, but if you see the real deal, pick it up.</p>
+              <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/metal.jpg') }}">Very versatile</a></div><br>
+              <strong>White/Grey Primer</strong>
+              <p>I'm not the biggest fan of using lighter primers because the dry bushing techniques I use has a very different effect 
+              on the mini. That being said a lighter primer is much easier to work with if you are just painting regularly. I sometimes just
+              paint directly (no primer) on the figure when I'm not dry brushing or even just use white paint as a primer. In my experience also, white 
+              primer doesn't stick as well on minis, often with the plastic showing through. </p>
+              <div class="smallcenterpage"> <a><img src="{{ url_for('static', filename='images/materials/white.jpg') }}">Multiple white primers I've tried</a></div><br>
+              <strong>Paint Remover</strong>
+              <p>Everyone makes mistakes, it's good to have something to erase those mistakes. I use LA Totally Awesome which only runs for a few
+              dollars and can be found at retail stores (at least in the U.S. anyways). <a href="https://www.youtube.com/watch?v=OqBjt1wKZfc&ab">
+               Check out this video for a great comparison test.</a>
+               <br><br>
+               <div class="mediumcenterpage"> <a href="{{ url_for('static', filename='images/materials/final.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/materials/final.jpg') }}"><a></a>Ready to go!</a></div><br>
+
+
+                
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24UO7Lm.U4ciBzvhcQtedPW1"+"&opts=16862&num=10&ts=1610508523482");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+        
+    </article>
+
+   {% endblock %}

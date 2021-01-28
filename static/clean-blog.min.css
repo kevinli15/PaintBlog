@@ -16,14 +16,19 @@ p a {
   text-decoration: underline;
 }
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2
+ {
   font-weight: 800;
   font-family: 'Spectral SC', serif;
   text-shadow: 5px 5px 4px #0c0c0c;
+}
+h3,
+h4,
+h5,
+h6 
+{
+  font-weight: 700;
+  font-family: 'Spectral SC', serif;
 }
 a {
   color: #333;
@@ -181,7 +186,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: rgba(232, 246, 250, 0.877);
+  color: rgba(232, 246, 250, 0.904);
 }
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading,

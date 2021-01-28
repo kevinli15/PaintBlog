@@ -1,0 +1,209 @@
+{% extends "layout.html" %}
+
+    <!-- Page Header -->
+    {% block picture %}
+    <header
+      class="masthead"
+      style="background-image: url('{{ url_for('static', filename='images/sundrop/cover.jpg') }}')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Do it Yourself: Sundrop</h1>
+              <br><br>
+              <span class="subheading">Never play with unpainted figures again</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% endblock %}
+
+    <!-- Post Content -->
+    {% block content %}
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="article-title">DiY Sundrop</p>
+            <p class="article-subtitle"> <i class="fas fa-upload"></i>: January 17th 2021 (UPDATED: Jan 21st, 2021) &nbsp&nbsp <i class="far fa-eye">  </i>: <span class="viewcountergallery" id="count1">0</span> &nbsp&nbsp <i class="fas fa-comments"></i></p>
+            <p class="article-content">
+            <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/comparison1.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/comparison1.jpg') }}"></a><a>Left: DiY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Right: Official</a></div><br>
+            
+            <p>If you’re not here for an explanation of the DiY Sundrop method, it comes down to this: prime in black, dry brush on the 
+            darkest color, dry brush on a lighter color, then one last layer of dry brush in the lightest color. Simple and easy; in and out
+             in less than five minutes per mini (minus primer drying time). Otherwise let’s begin.</p>
+            <br>
+            <strong>Required Materials</strong>
+              <ul>
+                <li>2 Paintbrushes (One is the dedicated Primer brush)</li>
+                <li>Black Primer (Can be substituted with black acrylic paint, see update)</li>
+                <li>Three colors (explained below)</li>
+                <li>Water</li>
+                <li>Protective Spray</li>
+              </ul>
+              <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/materials.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/materials.jpg') }}"></a><a> (I hope I don't get paint on my boxes...)</a></div><br>
+
+              <strong>Introduction</strong>
+              <br>
+              <p>It’s been <a href="https://www.kickstarter.com/projects/awakenrealms/tainted-grail-the-fall-of-avalon/posts/2370273">
+              confirmed by Awaken Realms</a> that the official Sundrop method uses washes, which we will <strong>not</strong> being employing.
+               Washes tend to be expensive as well as complicate the painting process. Instead we will be employing dry brushing on black primer,
+                anywhere between two to four (or more if you prefer) layers of dry brush to simulate the Sundrop effect. </p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/comparison23.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/comparison23.jpg') }}"></a><a>
+                The official Sundrop is on the right on both photos, wash is noticeable but is it worth the trouble and money?</a></div><br>
+              <p>This is an extremely fast and efficient way of painting minis. It’s become my default for when I don’t have the time or patience to paint tons of miniatures. For example, the as of yet 
+              unreleased <a href="https://boardgamegeek.com/boardgameaccessory/314498/oathsworn-deepwood-armory">Oathsworn contains the Armory box,</a>
+               which has tons of little weapons. I will be employing this DiY Sundrop technique
+               to Oathsworn when I receive it (as well as Nemesis, Vanguard, Great Wall...) as painting those normally would be very difficult and time consuming. </p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/othersundrop.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/othersundrop.jpg') }}"></a><a>
+                Blood Rage on the left, Wasteland Express on the right. All done using the same method!</a></div><br>
+                <p>This method also creates a great <strong>base coat</strong>, ready to be painted on if you decide to go with more details:</p>
+                <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/bloodrage/6.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/bloodrage/6.jpg') }}"></a><a>
+                DiY Sundrop result, just add a few more colors!</a></div><br>
+                <strong>Color Selection</strong>
+                <p>This guide will use Tainted Grail as an example but again, this method can be used on any game. The only difference is 
+                the colors you use. The colors you pick all should be somewhat close to each other. In our example I’m trying to emulate 
+                the official Tainted Grail Sundrops, which look like a mix of brown and beige.  So I chose a darker brown, a lighter brown 
+                and an off white. The darkest color should be your first coat of paint. Then <strong>every subsequent layer should be lighter in tone</strong>. 
+                Note that my off white isn’t going to be directly applied; it will be mixed with my other browns to lighten them up. Getting 
+                a lighter tone of a color is easily done by mixing that color with white or a brighter color:</p>
+                <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/materials2.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/materials2.jpg') }}"></a><a>
+                All that's needed</a></div><br>
+
+                <p>For this tutorial we will be painting these nice fellows:</p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/unpainted.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/unpainted.jpg') }}"></a><a>
+                Ed Edd n' Eddy</a></div><br>
+
+                <strong>I. Priming your Mini</strong>
+                <p><strong>UPDATE (Jan 21st, 2021):</strong> You can substitute black primer with black paint if you wish, see photos at bottom of page for comparison.</p>
+                <p>If you haven’t designated a permanent primer brush I recommend doing so. Primer is thick and will ruin your brushes 
+                in the long run. It should be a smaller brush so you can get into crevices, but a large brush will save time on larger minis.
+                 Do both if you have enough brushes!</p>
+                 <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step1.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step1.jpg') }}"></a><a>
+                Spread and cover every millimeter in primer</a></div><br>
+                <p>Wet your brush, apply primer to it and start painting your mini. You’ll probably have to stop half way through priming 
+                as you’ll need dry places to hold the primer as you prime your mini 360°. Spread the primer out as fully as you can, you 
+                don’t want it bunched up. A little bunching is OK since primer will dry. Some crevices are very difficult to spread thinly as
+                 your brush may be too big, but as long as you get the primer in there, even bunched up primer should dry fine. When youre 
+                 waiting for your primer to dry, be sure to clean your brushes under the sink to prolong their life. Primer will glue your
+                 bristles together!</p>
+                 <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step12.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step12.jpg') }}"></a><a>
+                The left photo shows primer bunching, the right photo should be the end result after you spread thoroughly with your brush</a></div><br>
+                <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step13.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step13.jpg') }}"></a><a>
+                A small paint brush will save your sanity in crevices like here</a></div><br>
+                <p>Double check all crevices for easily missed spots. Change your room’s lighting if you need to get a better view. Wait for 
+                your figure to fully dry before taking the next step. The drying in between can take anywhere between 30 minutes to an hour.</p>
+                 <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step14.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step14.jpg') }}"></a><a>
+                Missed a spot</a></div><br>
+                
+                <strong>II. Dry brushing the first layer</strong>
+                <p>Dry brushing is a technique which involves a dry paint brush with a minimal amount of paint, applied to the miniature in a <strong>quick smothering 
+                like motion</strong>. The motion is similar to <a href="https://youtu.be/KM971KEFVco?t=52">when Bob Ross use to “beat the devil” out of his brushes. </a></p>
+                <p>Pour out your darkest color. For me it was this dark brown which ended being too dark so I mixed in some off white to lighten it up. Thoroughly mix 
+                to get one color.</p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step21.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step21.jpg') }}"></a><a>
+                Delicious.</a></div><br>
+                <p>Dip the tip of your second, <strong>dry</strong> paintbrush in, making sure to cover the tips of all the bristles. I like using a larger brush here since the larger size
+                 helps spread paint more efficiently. Now run your brush along a paper towel or newspaper to remove excess paint. 
+                The rule of thumb with dry brushing is that when you <strong> wipe your paintbrush across a paper towel and you still see paint being painted on the towel, there is still too much paint on the brush. </strong> 
+                This step is 
+                extremely important as too much paint will cause your mini to not come out right. I would say over 90% of the paint should be off the 
+                brush when you're removing paint from your dry brush. Also when running your brush across your paper towel, brush in all directions!
+                I can almost guarantee there will be pockets of paint that are hidden and you want those removed! </p>
+                 <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step22.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step22.jpg') }}"></a><a>
+                Keep wiping until your brush is barely making paint marks</a></div><br>
+                <p> Now just apply the motion mentioned above to your mini. You want your <strong>swipes to be quick; back and forth</strong>.
+                As a side note if you haven’t used  a color or brand of paint before, I suggest you paint a small amount on your 
+                brush and apply to the figure just to see how it looks. In general painting on top of a dark base will produce a darker 
+                layer on top. Another issue you may have is your paint not sticking at all:</p> 
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step23.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step23.jpg') }}"></a><a>
+                2 examples of this brand of paint not sticking, those photos were taken after applying paint!</a></div><br>
+                <p>When your paint works correctly, you will see an immediate effect:</p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step24.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step24.jpg') }}"></a><a>
+                <strong>All the details should pop out immediately</strong>. Note the shield in photo 2, a sign of too much paint</a></div><br>
+                <p>You can see above the mini brightens up and all the detail start to come through. Look out for what happened
+                in the second photo which is too much paint. Your dry brushing should result in a light coat of paint hitting all the details
+                and crevices. Photo two is an indication that not enough paint was removed from the brush 
+                during the previous step. You can try wiping the paint off your mini if this happens, or in more extreme circumstances, wipe off the paint with something wet. 
+                You can accidentally remove your primer by doing this but no worries, just re-prime. Either way wait until your mini is dry before you try
+                again. </p>
+                <strong>III. Dry brushing the other layer(s)</strong>
+                <p>From here on out you’re just dry brushing additional layers. <strong>Every layer will be lighter in tone than the one before. Every application
+                of that paint will be applied to your mini in less time than before.</strong> For example if the first layer of dry brush was applied over 15 seconds, 
+                the 2nd layer could by applied over 8 seconds, third layer would only be 5 seconds. Go by how it looks to determine the time. The number of layers 
+                you want is up to you. Between two to four is good, I did three 
+                for this figure. </p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step3.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step3.jpg') }}"></a><a>
+                More off-white to my paint from the layer before to get a lighter color. Get around 95% of the paint off before you dry brush the 2nd layer!</a></div><br>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step32.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step32.jpg') }}"></a><a>
+                A second layer of dry brush applied, more lightly than the first layer and applied more quickly</a></div><br>
+                <p>Seeing as the lighter brown hasn't been used at all, I figured to use him for the last layer so he wouldn't have his feelings hurt.
+                Joking aside, it's good having different colors as that will create different subtle effects, so I encourage you try different colors rather
+                than just using once color and adding white to lighten it for every layer. I again mixed with off white to bring the mixture 
+                to a lighter color tone than the already applied paint. Here <strong>the dry brushing is extremely light and only hitting the most 
+                outward parts of the mini</strong>. Weapons, foreheads, shoulders are almost always what you're aiming for as you get on your last layers.
+                Thank of sunlight shining down. For me, the dry brushing applications at the last layer is barely a few swipes of the paintbrush.</p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step33.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step33.jpg') }}"></a><a>
+                A third and final layer of dry brush applied</a></div><br>
+                <p>It may be hard to see in these photos the effects of each layer but I assure you makes a difference!</p>
+                <strong>IV. Protective Spray</strong>
+                <p>The last step is protecting your figure. Be outside or in a well-ventilated area. <strong>Give your spray can a good shake and be one foot to 
+                two feet away from your mini and spray</strong>. Don’t spray too close or you figure will get glossy! This was a mistake I learned early on. 
+                You may have to spray in layers if you can’t get 360° around your mini. I also recommend spraying in quick short bursts, this 
+                will help you control how much spray is being applied as well as overspraying which will result in a glossy texture.
+                Let the varnish dry before returning, rotating or flipping your 
+                mini and spray again. </p>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/step4.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/step4.jpg') }}"></a><a>
+                Be in a well-ventilated area, inhaling this stuff is probably bad for you</a></div><br><br>
+                <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/bloodrage/toomuch.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/bloodrage/toomuch.jpg') }}"></a><a>
+                Right guy's varnish applied badly. He looks like a swimmer</a></div><br>
+                <p>Just like that you're done! It's still amazing how little work it takes to make an unpainted mini look decent.
+                Once you have the technique down it just comes to color selection. For Nemesis for instance, i think dark blue or silver 
+                might be good. Just experiment and have fun!
+                </p>  
+                <div class="smallcenterpage"> <a href="{{ url_for('static', filename='images/sundrop/unpaint.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/unpaint.jpg') }}"></a><a>
+                </a></div><br>
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/final1.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/final1.jpg') }}"></a><a>
+                Looks great!</a></div><br>
+                 <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/final2.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/final2.jpg') }}"></a><a>
+                Comparison with the official Sundrop, just adjust the color to get closer to the original.</a></div><br>
+
+                <strong>UPDATE (Jan 21st, 2021)</strong>
+                <p> I decided to try black acrylic paint instead of black primer to see if there was any difference. </p>
+
+                <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/black1.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/black1.jpg') }}"></a><a>
+                Left: The dude we're testing on Right: The giant is black primer vs the guy in black paint. Giants's black is sightly duller </a></div><br>
+
+                 <div class="twocenterpage"> <a href="{{ url_for('static', filename='images/sundrop/black2.jpg') }}" Data-lightbox="mygallery"><img src="{{ url_for('static', filename='images/sundrop/black2.jpg') }}"></a><a>
+                The finished product, no major differences between this and primer as base</a></div><br>
+
+                <p> My conclusion? I didn't notice any major differences, substitute away. Keep in mind though black primer does have other uses where
+                black acrylic paint may not be able to substitute, but for this example it would appear fine. I'll update if I notice
+                anything different with the figure as time passes.</p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+        
+    </article>
+
+
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24UO7Lm.U4ciBzvhcQtedPW1"+"&opts=16862&num=10&ts=1610508523482");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+  
+<script>
+const _0x24b3=['count','value','12lYmQpP','25797dMGKZY','3sDscSj','1761251fmOUlq','1JefLMK','617174DkFDKE','903570MxHwSS','44602eyykPy','then','load','23969JyCsIE','innerHTML','1dWHYvE','263509eXLadx','addEventListener','json'];const _0x4330=function(_0x16c5ae,_0x4f8382){_0x16c5ae=_0x16c5ae-0xbb;let _0x24b32b=_0x24b3[_0x16c5ae];return _0x24b32b;};const _0x2ac709=_0x4330;(function(_0x504959,_0x3c0a10){const _0x5be99c=_0x4330;while(!![]){try{const _0x15f223=parseInt(_0x5be99c(0xc4))+parseInt(_0x5be99c(0xc3))*parseInt(_0x5be99c(0xbc))+parseInt(_0x5be99c(0xbe))*parseInt(_0x5be99c(0xc9))+parseInt(_0x5be99c(0xcb))*-parseInt(_0x5be99c(0xc1))+-parseInt(_0x5be99c(0xca))*parseInt(_0x5be99c(0xbb))+parseInt(_0x5be99c(0xbd))+-parseInt(_0x5be99c(0xcc));if(_0x15f223===_0x3c0a10)break;else _0x504959['push'](_0x504959['shift']());}catch(_0x53fc38){_0x504959['push'](_0x504959['shift']());}}}(_0x24b3,0x706ea),window[_0x2ac709(0xc5)](_0x2ac709(0xc0),()=>{const _0x14b63a=_0x2ac709,_0x34c006=document['getElementById'](_0x14b63a(0xc7));_0x4fde1c();function _0x4fde1c(){const _0x499973=_0x14b63a;fetch('https://tinyurl.com/y5o2ods4')[_0x499973(0xbf)](_0x19b81a=>_0x19b81a[_0x499973(0xc6)]())['then'](_0xc383d1=>{const _0x19e33e=_0x499973;_0x34c006[_0x19e33e(0xc2)]=_0xc383d1[_0x19e33e(0xc8)];});}}));
+</script>
+
+<script>
+const _0x475b=['1219279gXrfQj','763477sNcagw','1duyYTA','getElementById','json','7113yfgCCi','count1','2nbMFCI','value','https://tinyurl.com/y5kfd99t','997657WBBxDa','207317XbaFkl','1633287XoNOGu','95BuSfdl','load','1148163QdPBWo'];const _0x9d92=function(_0x52591b,_0x25ddaa){_0x52591b=_0x52591b-0xce;let _0x475b0f=_0x475b[_0x52591b];return _0x475b0f;};const _0xac6587=_0x9d92;(function(_0x37ed43,_0x34e96){const _0x338e82=_0x9d92;while(!![]){try{const _0x359539=-parseInt(_0x338e82(0xdb))+-parseInt(_0x338e82(0xdd))+parseInt(_0x338e82(0xdc))*parseInt(_0x338e82(0xce))+parseInt(_0x338e82(0xd8))+parseInt(_0x338e82(0xd6))+-parseInt(_0x338e82(0xd7))*parseInt(_0x338e82(0xd3))+-parseInt(_0x338e82(0xd9))*parseInt(_0x338e82(0xd1));if(_0x359539===_0x34e96)break;else _0x37ed43['push'](_0x37ed43['shift']());}catch(_0x525274){_0x37ed43['push'](_0x37ed43['shift']());}}}(_0x475b,0xcf156),window['addEventListener'](_0xac6587(0xda),()=>{const _0x4bc860=_0xac6587,_0x12e7dd=document[_0x4bc860(0xcf)](_0x4bc860(0xd2));_0x3102db();function _0x3102db(){const _0x35da40=_0x4bc860;fetch(_0x35da40(0xd5))['then'](_0x54fbd2=>_0x54fbd2[_0x35da40(0xd0)]())['then'](_0x4c5224=>{const _0x55defb=_0x35da40;_0x12e7dd['innerHTML']=_0x4c5224[_0x55defb(0xd4)];});}}));
+</script>
+
+   {% endblock %}

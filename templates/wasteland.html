@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+<!-- Page Header -->
+{% block picture %}
+<header
+  class="masthead"
+  style="background-image: url('{{ url_for('static', filename='images/wasteland/cover.jpg') }}')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Wasteland Express Delivery Service</h1>
+          <span class="subheading">by Pandasaurus Games</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+<!-- Post Content -->
+{% block content %}
+<article>
+  <div class="container-images">
+    <div class="gallery-img">
+      <a href="static/images/wasteland/1.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/1.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/2.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/2.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/1.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/3.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/4.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/4.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/5.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/5.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/6.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/6.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/7.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/7.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/8.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/8.jpg') }}"
+      /></a>
+    </div>
+    <div class="gallery-img">
+      <a href="static/images/wasteland/9.jpg" data-lightbox="mygallery"
+        ><img src="{{ url_for('static', filename='images/wasteland/9.jpg') }}"
+      /></a>
+    </div>
+  </div>
+</article>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24UO7Lm.U4ciBzvhcQtedPW1"+"&opts=16862&num=10&ts=1610508523482");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+{% endblock %}

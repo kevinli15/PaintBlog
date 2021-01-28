@@ -1,143 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>Some Painting Website</title>
-
-    <!-- Bootstrap core CSS -->
-    <link
-      href="{{ url_for('static', filename='bootstrap.min.css') }}"
-      rel="stylesheet"
-    />
-
-    <!-- Custom fonts for this template -->
-    <link
-      href="{{ url_for('static', filename='font-awesome.min.css') }}"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;600&display=swap" rel="stylesheet"> 
-
-    <!-- Custom styles for this template -->
-    <link
-      href="{{ url_for('static', filename='clean-blog.min.css') }}"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="{{ url_for('index') }}"
-          >Start Bootstrap</a
-        >
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('index') }}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('about') }}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header
+{% extends "layout.html" %}
+{% block picture %}
+   <header
       class="masthead"
-      style="background-image: url('{{ url_for('static', filename='home-bg.jpg') }}')"
+      style="background-image: url('{{ url_for('static', filename='images/misc/cover2.jpg') }}')"
     >
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Some Painting Website</h1>
-              <span class="subheading">An absolute beginners guide to painting minitaures</span>
+              <h1>Miniatures Palace</h1>
+              <span class="subheading">An absolute beginners guide<span>
+              <span class="subheading">to painting minitaures</span>
             </div>
           </div>
         </div>
       </div>
     </header>
+{% endblock %}
+{% block content %}
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          {% for post in posts %}
-          <div class="post-preview">
-            <a href="{{ url_for('post', post_id=post.id) }}">
-              <h2 class="post-title">{{ post.title }}</h2>
-              <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            </a>
-            <p class="post-meta">
-              Posted by {{ post.author }} on {{ post.date_posted.strftime('%B
-              %d, %Y') }}
-            </p>
-          </div>
-          {% endfor %}
-          <hr />
-        </div>
-      </div>
+<article>
+<p class="article-title">Newest Posts</p>
+  <div class="container-images">
+       <div class="gallery-selection">
+      <a href="{{ url_for('jade') }}">
+      <img src="{{ url_for('static', filename='images/jade/title.jpg') }}"/></a> 
+      <span class="description"> <i class="fas fa-upload"></i>: January 28th 2021 &nbsp&nbsp</span><i class="far fa-eye"></i>: <span class="viewcountergallery" id="jade">0</span> <i class="fas fa-comments"></i></span>      
     </div>
+     <div class="gallery-selection">
+      <a href="{{ url_for('risingsun') }}">
+      <img src="{{ url_for('static', filename='images/risingsun/titlemain.jpg') }}"/></a> 
+      <span class="description"> <i class="fas fa-upload"></i>: January 28th 2021 &nbsp&nbsp</span> &nbsp&nbsp <i class="fas fa-comments"></i></span>      
+    </div>
+   <div class="gallery-selection">
+      <a href="{{ url_for('diysundrop') }}">
+      <img src="{{ url_for('static', filename='images/sundrop/title.jpg') }}"/></a> 
+      <span class="description"> <i class="fas fa-upload"></i>: January 17th 2021 &nbsp&nbsp <i class="far fa-eye">  </i>: <span class="viewcountergallery" id="count1">0</span> &nbsp&nbsp <i class="fas fa-comments"></i></span>      
+    </div>
+  </div>
+</article>
 
-    <hr />
+<!--SUNDROP-->
+<script>
+const _0x475b=['1219279gXrfQj','763477sNcagw','1duyYTA','getElementById','json','7113yfgCCi','count1','2nbMFCI','value','https://tinyurl.com/y5kfd99t','997657WBBxDa','207317XbaFkl','1633287XoNOGu','95BuSfdl','load','1148163QdPBWo'];const _0x9d92=function(_0x52591b,_0x25ddaa){_0x52591b=_0x52591b-0xce;let _0x475b0f=_0x475b[_0x52591b];return _0x475b0f;};const _0xac6587=_0x9d92;(function(_0x37ed43,_0x34e96){const _0x338e82=_0x9d92;while(!![]){try{const _0x359539=-parseInt(_0x338e82(0xdb))+-parseInt(_0x338e82(0xdd))+parseInt(_0x338e82(0xdc))*parseInt(_0x338e82(0xce))+parseInt(_0x338e82(0xd8))+parseInt(_0x338e82(0xd6))+-parseInt(_0x338e82(0xd7))*parseInt(_0x338e82(0xd3))+-parseInt(_0x338e82(0xd9))*parseInt(_0x338e82(0xd1));if(_0x359539===_0x34e96)break;else _0x37ed43['push'](_0x37ed43['shift']());}catch(_0x525274){_0x37ed43['push'](_0x37ed43['shift']());}}}(_0x475b,0xcf156),window['addEventListener'](_0xac6587(0xda),()=>{const _0x4bc860=_0xac6587,_0x12e7dd=document[_0x4bc860(0xcf)](_0x4bc860(0xd2));_0x3102db();function _0x3102db(){const _0x35da40=_0x4bc860;fetch(_0x35da40(0xd5))['then'](_0x54fbd2=>_0x54fbd2[_0x35da40(0xd0)]())['then'](_0x4c5224=>{const _0x55defb=_0x35da40;_0x12e7dd['innerHTML']=_0x4c5224[_0x55defb(0xd4)];});}}));
+</script>
+<!--JADE-->
+<script>
+const _0x48f9=['jade','load','2MKdvEH','1151NTQRME','23495aMrHIq','116311fgvNdj','innerHTML','addEventListener','1429HoagUP','375175nfKkpY','4092959dxUdfL','4TInBTx','225845gPyXZm','1VvayqS','value','300379GJriCl','json','then'];const _0x25ed=function(_0x4c216f,_0x5a550c){_0x4c216f=_0x4c216f-0x1c5;let _0x48f942=_0x48f9[_0x4c216f];return _0x48f942;};const _0x1e1f35=_0x25ed;(function(_0x3f3b89,_0x426a43){const _0x2a2a84=_0x25ed;while(!![]){try{const _0x3e7a5f=parseInt(_0x2a2a84(0x1ce))+-parseInt(_0x2a2a84(0x1c7))+parseInt(_0x2a2a84(0x1cc))*-parseInt(_0x2a2a84(0x1d6))+parseInt(_0x2a2a84(0x1cd))*-parseInt(_0x2a2a84(0x1d2))+-parseInt(_0x2a2a84(0x1d3))+-parseInt(_0x2a2a84(0x1cf))*parseInt(_0x2a2a84(0x1d5))+parseInt(_0x2a2a84(0x1c5))*parseInt(_0x2a2a84(0x1d4));if(_0x3e7a5f===_0x426a43)break;else _0x3f3b89['push'](_0x3f3b89['shift']());}catch(_0x3092f6){_0x3f3b89['push'](_0x3f3b89['shift']());}}}(_0x48f9,0xd6a53),window[_0x1e1f35(0x1d1)](_0x1e1f35(0x1cb),()=>{const _0x83bdf5=_0x1e1f35,_0x207498=document['getElementById'](_0x83bdf5(0x1ca));_0x14419c();function _0x14419c(){const _0x426825=_0x83bdf5;fetch('https://tinyurl.com/y3xbtmu5')[_0x426825(0x1c9)](_0x20cd2e=>_0x20cd2e[_0x426825(0x1c8)]())['then'](_0x1e8165=>{const _0x14a734=_0x426825;_0x207498[_0x14a734(0x1d0)]=_0x1e8165[_0x14a734(0x1c6)];});}}));
+</script>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <p class="copyright text-muted">
-              Copyright &copy; Your Website 2017
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
-  </body>
-</html>
+{% endblock %}

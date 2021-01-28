@@ -1,0 +1,50 @@
+{% extends "layout.html"%}
+
+  <!-- Page Header -->
+  {% block picture %}
+  <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Introduction</h1>
+            <span class="subheading">Not another painting website!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% endblock %}
+
+  <!-- Main Content -->
+  {% block content %}
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="article-title"></p>
+            <p class="article-content">
+            <p>First and foremost, I’d like to say thank you for taking the time to visit my site.
+             My name is Kevin and I’m well aware of the numerous excellent websites across the internet that have no doubt helped 
+             many board game enthusiasts dip their first brushes in paint.  Despite this I’ve felt the need to create a beginners
+              guide but with some of the methods I’ve discovered. </p>
+              
+
+            <p>Compared to many other painters, I’m still a baby at this. I purchased my first “serious” board game (Gloomhaven) back 
+            in early 2019 and started painting my first game (Blood Rage) at the end of 2019.  I had no prior experience and even less 
+            artistic skills. However, after some time experimenting I was able to paint what you see before you.</p>
+
+            <img class="smallcenter" src="{{ url_for('static', filename='images/bloodrage/3.jpg') }}">
+
+            <p>My methods are always easy, (relatively) painless and cheap. None of these guides will require what I consider a higher 
+            level of dexterity to accomplish. If you ever feel you’ve got a good handle on these skills I encourage you to go visit other
+             sites or even take courses to really up your game! All I aim to do is to help get your feet off the ground. So just relax 
+             and enjoy the journey and always be proud of what you create! </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+<!-- Page Header -->
+{% block picture %}
+<header
+  class="masthead"
+  style="background-image: url('{{ url_for('static', filename='.jpg') }}')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Big Title</h1>
+          <span class="subheading">Subtitle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+<!-- Post Content -->
+{% block content %}
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p class="article-title">Title</p>
+        <p class="article-content">blah blah blah</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% endblock %}
